@@ -8,7 +8,7 @@ extends Node2D
 
 var current_weapon := "pistol"
 
-const BULLET = preload("res://entities/bullet.tscn")
+const BULLET = preload("res://entities/Player/bullet.tscn")
 
 func equip_weapon(weapon_name: String) -> void:
 

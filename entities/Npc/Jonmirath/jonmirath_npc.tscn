@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://rc04go6q7kvq"]
+
+[ext_resource type="Script" uid="uid://bvva55ow8ag6a" path="res://entities/Npc/Jonmirath/Dialog_Jhonmirath.gd" id="1_hpqkx"]
+[ext_resource type="Texture2D" uid="uid://l8t8fswui7s5" path="res://Sprites/Npc/jhonmirath/jhonSell.png" id="2_hpqkx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hpqkx"]
+radius = 40.0
+height = 144.0
+
+[node name="Jonmirath_npc" type="Node2D" unique_id=377887702]
+z_index = 1
+script = ExtResource("1_hpqkx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=850923023]
+texture = ExtResource("2_hpqkx")
+hframes = 8
+
+[node name="Area2D" type="Area2D" parent="." unique_id=179189367]
+collision_layer = 16
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1935929882]
+visible = false
+position = Vector2(-20, 2)
+shape = SubResource("CapsuleShape2D_hpqkx")

@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://bv2rqxoijifi3"]
+
+[ext_resource type="Texture2D" uid="uid://cajhauv563ftk" path="res://Dialog/Assets/Jonmirath/jhon_idle.png" id="1_atyf0"]
+[ext_resource type="Script" uid="uid://y6r5nx8ggfl4" path="res://scripts/Dialog/dialog_screen.gd" id="1_p7wbi"]
+[ext_resource type="FontFile" uid="uid://gqj5gd8l0gxt" path="res://Dialog/Fonts/EquipmentPro.ttf" id="2_p7wbi"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ilfcd"]
+line_spacing = 0.0
+font = ExtResource("2_p7wbi")
+shadow_color = Color(0, 0, 0, 0.6)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fghlt"]
+line_spacing = 0.0
+font = ExtResource("2_p7wbi")
+font_size = 10
+shadow_color = Color(0, 0, 0, 0.6)
+
+[node name="DialogScreen" type="Control" unique_id=259183242 node_paths=PackedStringArray("_name", "_epiteto", "_dialog", "_faceset")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 160.0
+offset_top = 220.0
+offset_right = -96.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+script = ExtResource("1_p7wbi")
+_name = NodePath("Background/HContainer/VContainer/Name")
+_epiteto = NodePath("Background/HContainer/VContainer/Name/epiteto")
+_dialog = NodePath("Background/HContainer/VContainer/Dialog")
+_faceset = NodePath("Background/HContainer/Border/Faceset")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1963666175]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.59607846)
+
+[node name="HContainer" type="HBoxContainer" parent="Background" unique_id=1053564455]
+custom_minimum_size = Vector2(312, 72)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -156.0
+offset_top = -36.0
+offset_right = 156.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Border" type="ColorRect" parent="Background/HContainer" unique_id=967436934]
+custom_minimum_size = Vector2(72, 72)
+layout_mode = 2
+
+[node name="Faceset" type="TextureRect" parent="Background/HContainer/Border" unique_id=410755844]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -36.0
+offset_right = 35.0
+offset_bottom = 36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_atyf0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VContainer" type="VBoxContainer" parent="Background/HContainer" unique_id=453836805]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Name" type="Label" parent="Background/HContainer/VContainer" unique_id=1115523512]
+layout_mode = 2
+text = "Jonmirath"
+label_settings = SubResource("LabelSettings_ilfcd")
+
+[node name="epiteto" type="Label" parent="Background/HContainer/VContainer/Name" unique_id=1632822833]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 4.0
+offset_right = 166.0
+offset_bottom = 15.0
+text = "Senhor das armas"
+label_settings = SubResource("LabelSettings_fghlt")
+
+[node name="Dialog" type="RichTextLabel" parent="Background/HContainer/VContainer" unique_id=886045540]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.6)
+theme_override_fonts/normal_font = ExtResource("2_p7wbi")
+text = "dasda"
