@@ -1,0 +1,116 @@
+[gd_scene format=4 uid="uid://bwnv34i6mhhw5"]
+
+[ext_resource type="PackedScene" uid="uid://jhvpa4t4xxju" path="res://entities/player.tscn" id="1_ly3ei"]
+[ext_resource type="Texture2D" uid="uid://h3d6gdv2ob52" path="res://Backgrounds/Battlerground/Battleground3/Bright/sky.png" id="2_ey7o2"]
+[ext_resource type="Texture2D" uid="uid://clkg6jcc0tiit" path="res://Backgrounds/Battlerground/Battleground3/Bright/jungle_bg.png" id="3_7cdsw"]
+[ext_resource type="Texture2D" uid="uid://b1jctndgoi3kj" path="res://Backgrounds/Battlerground/Battleground3/Bright/trees&bushes.png" id="4_66p6d"]
+[ext_resource type="Texture2D" uid="uid://w8ehwnv7tn2s" path="res://Backgrounds/Battlerground/Battleground3/Bright/lianas.png" id="5_hg2jp"]
+[ext_resource type="TileSet" uid="uid://qafc8s2vo0ho" path="res://Tiles/Terrain.tres" id="6_7cdsw"]
+[ext_resource type="Texture2D" uid="uid://bh68js8bvssfq" path="res://Backgrounds/Battlerground/Battleground3/Bright/grasses.png" id="6_ji73l"]
+[ext_resource type="Texture2D" uid="uid://ckpq1gpw8c4nb" path="res://Backgrounds/Battlerground/Battleground3/Bright/grass&road.png" id="7_lshjo"]
+[ext_resource type="Texture2D" uid="uid://dhygihl3s7epx" path="res://Backgrounds/Battlerground/Battleground3/Bright/fireflys.png" id="8_c47wq"]
+[ext_resource type="Texture2D" uid="uid://efn2ghgu22yi" path="res://Backgrounds/Battlerground/Battleground3/Bright/tree_face.png" id="9_tnr3t"]
+[ext_resource type="TileSet" uid="uid://wumxlpv7fq43" path="res://Tiles/Decoration.tres" id="11_7cdsw"]
+[ext_resource type="PackedScene" uid="uid://4esbid5vucy7" path="res://entities/camera.tscn" id="12_66p6d"]
+[ext_resource type="PackedScene" uid="uid://b3nrpwr366e18" path="res://entities/level_end.tscn" id="13_hg2jp"]
+
+[node name="Forest" type="Node2D" unique_id=868546146]
+metadata/_edit_vertical_guides_ = [1151.0, 1152.0, 1152.0]
+
+[node name="TilesMaps" type="Node" parent="." unique_id=318153403]
+
+[node name="Terrain" type="TileMapLayer" parent="TilesMaps" unique_id=1012690625]
+tile_map_data = PackedByteArray("AAAAABMAAAACAAMAAAABABMAAAACAAMAAAACABMAAAACAAMAAAADABMAAAACAAMAAAAEABMAAAACAAMAAAAFABMAAAACAAMAAAAGABMAAAACAAMAAAAHABMAAAACAAMAAAAIABMAAAACAAMAAAAJABMAAAACAAMAAAAKABMAAAACAAMAAAALABMAAAACAAMAAAAMABMAAAACAAMAAAANABMAAAACAAMAAAAOABMAAAACAAMAAAAPABMAAAACAAMAAAAQABMAAAACAAMAAAARABMAAAACAAMAAAASABMAAAACAAMAAAATABMAAAACAAMAAAAUABMAAAACAAMAAAAVABMAAAACAAMAAAAWABMAAAACAAMAAAAXABMAAAACAAMAAAAYABMAAAACAAMAAAAZABMAAAACAAMAAAAaABMAAAACAAMAAAAbABMAAAACAAMAAAAcABMAAAACAAMAAAAnABMAAAACAAMAAAAoABMAAAACAAMAAAApABMAAAACAAMAAAAqABMAAAACAAMAAAArABMAAAACAAMAAAAsABMAAAACAAMAAAAtABMAAAACAAMAAAAuABMAAAACAAMAAAAvABMAAAACAAMAAAAwABMAAAACAAMAAAAxABMAAAACAAMAAAAyABMAAAACAAMAAAAzABMAAAACAAMAAAA0ABMAAAACAAMAAAA1ABMAAAACAAMAAAA2ABMAAAACAAMAAAA3ABMAAAACAAMAAAA4ABMAAAACAAMAAAA5ABMAAAACAAMAAAA6ABMAAAACAAMAAAA7ABMAAAACAAMAAAA8ABMAAAACAAMAAAA9ABMAAAACAAMAAAA+ABMAAAACAAMAAAA/ABMAAAACAAMAAABAABMAAAACAAMAAABBABMAAAACAAMAAABCABMAAAACAAMAAABDABMAAAACAAMAAABEABMAAAACAAMAAABFABMAAAACAAMAAABGABMAAAACAAMAAABHABMAAAACAAMAAAABABQAAAAEAAMAAAACABQAAAAEAAMAAAADABQAAAAEAAMAAAAEABQAAAAEAAMAAAAFABQAAAAEAAMAAAAGABQAAAAEAAMAAAAHABQAAAAEAAMAAAAIABQAAAAEAAMAAAAJABQAAAAEAAMAAAAKABQAAAAEAAMAAAALABQAAAAEAAMAAAAMABQAAAAEAAMAAAANABQAAAAEAAMAAAAOABQAAAAEAAMAAAAPABQAAAAEAAMAAAAQABQAAAAEAAMAAAARABQAAAAEAAMAAAASABQAAAAEAAMAAAATABQAAAAEAAMAAAAUABQAAAAEAAMAAAAVABQAAAAEAAMAAAAWABQAAAAEAAMAAAAXABQAAAAEAAMAAAAYABQAAAAEAAMAAAAZABQAAAAEAAMAAAAaABQAAAAEAAMAAAAbABQAAAAEAAMAAAAcABQAAAAEAAMAAAAnABQAAAAEAAMAAAAoABQAAAAEAAMAAAApABQAAAAEAAMAAAAqABQAAAAEAAMAAAArABQAAAAEAAMAAAAsABQAAAAEAAMAAAAtABQAAAAEAAMAAAAuABQAAAAEAAMAAAAvABQAAAAEAAMAAAAwABQAAAAEAAMAAAAxABQAAAAEAAMAAAAyABQAAAAEAAMAAAAzABQAAAAEAAMAAAA0ABQAAAAEAAMAAAA1ABQAAAAEAAMAAAA2ABQAAAAEAAMAAAA3ABQAAAAEAAMAAAA4ABQAAAAEAAMAAAA5ABQAAAAEAAMAAAA6ABQAAAAEAAMAAAA7ABQAAAAEAAMAAAA8ABQAAAAEAAMAAAA9ABQAAAAEAAMAAAA+ABQAAAAEAAMAAAA/ABQAAAAEAAMAAABAABQAAAAEAAMAAABBABQAAAAEAAMAAABCABQAAAAEAAMAAABDABQAAAAEAAMAAABEABQAAAAEAAMAAABFABQAAAAEAAMAAABGABQAAAAEAAMAAABHABQAAAAEAAMAAAAAABQAAAAEAAMAAAA=")
+tile_set = ExtResource("6_7cdsw")
+
+[node name="Decoration" type="TileMapLayer" parent="TilesMaps" unique_id=1006364455]
+tile_map_data = PackedByteArray("AAAdABMABgAMAAUAAAAeABMABgAMAAUAAAAfABMABgAMAAUAAAAgABMABgAMAAUAAAAhABMABgAMAAUAAAAiABMABgAMAAUAAAAjABMABgAMAAUAAAAkABMABgAMAAUAAAAlABMABgAMAAUAAAAmABMABgAMAAUAAAAdABQABgAMAAYAAAAeABQABgAMAAYAAAAfABQABgAMAAYAAAAgABQABgAMAAYAAAAhABQABgAMAAYAAAAiABQABgAMAAYAAAAjABQABgAMAAYAAAAkABQABgAMAAYAAAAlABQABgAMAAYAAAAmABQABgAMAAYAAAA=")
+tile_set = ExtResource("11_7cdsw")
+
+[node name="Background" type="Parallax2D" parent="." unique_id=532813463]
+
+[node name="1" type="Parallax2D" parent="Background" unique_id=1118021320]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/1" unique_id=701941364]
+scale = Vector2(0.3, 0.31111115)
+texture = ExtResource("2_ey7o2")
+centered = false
+
+[node name="2" type="Parallax2D" parent="Background" unique_id=469758476]
+scroll_scale = Vector2(0.2, 0.2)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/2" unique_id=1601601836]
+scale = Vector2(0.3, 0.311)
+texture = ExtResource("3_7cdsw")
+centered = false
+
+[node name="3" type="Parallax2D" parent="Background" unique_id=854838352]
+scroll_scale = Vector2(0.3, 0.3)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/3" unique_id=160451745]
+scale = Vector2(0.3, 0.311)
+texture = ExtResource("4_66p6d")
+centered = false
+
+[node name="4" type="Parallax2D" parent="Background" unique_id=1862548975]
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/4" unique_id=483857425]
+scale = Vector2(0.3, 0.311)
+texture = ExtResource("5_hg2jp")
+centered = false
+
+[node name="5" type="Parallax2D" parent="Background" unique_id=1561783473]
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/5" unique_id=1071022732]
+scale = Vector2(0.3, 0.311)
+texture = ExtResource("6_ji73l")
+centered = false
+
+[node name="6" type="Parallax2D" parent="Background" unique_id=598470373]
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/6" unique_id=576903224]
+scale = Vector2(0.3, 0.311)
+texture = ExtResource("7_lshjo")
+centered = false
+
+[node name="7" type="Parallax2D" parent="Background" unique_id=2089110456]
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/7" unique_id=196912007]
+scale = Vector2(0.3, 0.311)
+texture = ExtResource("8_c47wq")
+centered = false
+
+[node name="8" type="Parallax2D" parent="Background" unique_id=1018687029]
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(576, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background/8" unique_id=1229505153]
+scale = Vector2(0.3, 0.311)
+texture = ExtResource("9_tnr3t")
+centered = false
+
+[node name="Camera" parent="." unique_id=1735282793 instance=ExtResource("12_66p6d")]
+position = Vector2(222, 166)
+limit_top = 0
+limit_right = 1152
+
+[node name="LevelEnd" parent="." unique_id=2054325993 instance=ExtResource("13_hg2jp")]
+position = Vector2(1157, 154.00002)
+scale = Vector2(1, -15.888095)
+next_level = "plain"
+
+[node name="Player" parent="." unique_id=1023012332 instance=ExtResource("1_ly3ei")]
+position = Vector2(45, 256)
+scale = Vector2(2, 2)
