@@ -6,6 +6,7 @@ extends Node2D
 
 @onready var l_arm = $"../../../L_Arm"
 
+
 var current_weapon := "pistol"
 
 const BULLET = preload("res://entities/Player/bullet.tscn")
@@ -32,16 +33,21 @@ func equip_weapon(weapon_name: String) -> void:
 func shoot() -> void:
 
 	var weapon_node: Node2D
+	var bullet_anim := "Fire_1"
 
 	match current_weapon:
+
 		"pistol":
 			weapon_node = pistol
+			bullet_anim = "Fire_2"
 
 		"shotgun":
 			weapon_node = shotgun
+			bullet_anim = "Fire_1"
 
 		"ak":
 			weapon_node = ak
+			bullet_anim = "Fire_2"
 
 	var muzzle = weapon_node.get_node("Muzzle")
 
@@ -51,6 +57,8 @@ func shoot() -> void:
 
 	bullet_instance.global_position = muzzle.global_position
 	bullet_instance.global_rotation = muzzle.global_rotation
+
+	bullet_instance.set_bullet_animation(bullet_anim)
 
 func _input(event):
 
