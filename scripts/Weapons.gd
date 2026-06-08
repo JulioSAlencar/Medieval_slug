@@ -52,12 +52,11 @@ func shoot() -> void:
 	var muzzle = weapon_node.get_node("Muzzle")
 
 	var bullet_instance = BULLET.instantiate()
-
+	bullet_instance.owner_type = "player"       # ← ADICIONE ISSO
+	bullet_instance.set_name("PlayerBullet_" + str(Time.get_ticks_msec()))
 	get_tree().current_scene.add_child(bullet_instance)
-
 	bullet_instance.global_position = muzzle.global_position
 	bullet_instance.global_rotation = muzzle.global_rotation
-
 	bullet_instance.set_bullet_animation(bullet_anim)
 
 func _input(event):

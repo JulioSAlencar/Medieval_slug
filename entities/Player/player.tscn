@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cs2cddsvq0p4c" path="res://Sprites/Weapon/guns/Pistol-3.png" id="6_i623q"]
 [ext_resource type="Texture2D" uid="uid://d03ju1cgraavi" path="res://Sprites/Weapon/guns/Shotgun-1.png" id="7_ef06p"]
 [ext_resource type="Texture2D" uid="uid://fk0cmcorebrc" path="res://Sprites/Weapon/guns/Assaut-rifle-1.png" id="8_tjdhl"]
+[ext_resource type="PackedScene" uid="uid://dqfi4l0u2d1cw" path="res://entities/Player/life_bar.tscn" id="10_cm1li"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ef06p"]
 radius = 6.0
@@ -175,7 +176,7 @@ animations = [{
 [node name="Player" type="CharacterBody2D" unique_id=1023012332 groups=["Player"]]
 z_index = 1
 collision_layer = 2
-collision_mask = 9
+collision_mask = 45
 script = ExtResource("1_merdl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1361359843]
@@ -251,3 +252,10 @@ position = Vector2(-1, 14.999999)
 scale = Vector2(0.77343756, 0.59375)
 sprite_frames = SubResource("SpriteFrames_6tce4")
 animation = &"walk_back"
+
+[node name="LifeBar" parent="." unique_id=600239467 instance=ExtResource("10_cm1li")]
+offset_left = -13.0
+offset_top = -10.0
+offset_right = 51.0
+offset_bottom = 6.0
+scale = Vector2(0.4, 0.185)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dqfi4l0u2d1cw"]
+
+[ext_resource type="Texture2D" uid="uid://ubckdyb2n1t2" path="res://Sprites/player/OverLifeBar3.png" id="1_o0s8n"]
+[ext_resource type="Texture2D" uid="uid://di36t6iejqo5d" path="res://Sprites/player/Bar3.png" id="2_du0o8"]
+[ext_resource type="Texture2D" uid="uid://dqdk35dqdt2hy" path="res://Sprites/player/LifeBar3.png" id="3_msyr4"]
+
+[node name="LifeBar" type="TextureProgressBar" unique_id=600239467]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.1600003, 1)
+value = 100.0
+texture_under = ExtResource("1_o0s8n")
+texture_over = ExtResource("2_du0o8")
+texture_progress = ExtResource("3_msyr4")

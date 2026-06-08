@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c1sior87fwryx" path="res://Backgrounds/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_oabd4"]
 [ext_resource type="Texture2D" uid="uid://c3f4g8gbqnn58" path="res://Backgrounds/medieval-armory-street-cartoon/Platformer/Cartoon_Medieval_Armory_Level_Set_Platformer - Ground 02.png" id="2_1irxo"]
 [ext_resource type="Texture2D" uid="uid://c33hj74tqfy35" path="res://Backgrounds/Seasonal Tilesets/2 - Autumn Forest/Terrain (16 x 16).png" id="2_kp5ct"]
+[ext_resource type="Texture2D" uid="uid://ctlfi8u5y0etu" path="res://Backgrounds/medieval-armory-street-cartoon/Platformer/Cartoon_Medieval_Armory_Level_Set_Platformer - Ground 06.png" id="4_1irxo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xokc6"]
 texture = ExtResource("1_oabd4")
@@ -69,11 +70,6 @@ texture = ExtResource("1_oabd4")
 5:6/0 = 0
 5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:8/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_seg7s"]
-texture = ExtResource("2_1irxo")
-0:0/size_in_atlas = Vector2i(4, 4)
-0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k140u"]
 resource_name = "Autumn"
@@ -149,9 +145,20 @@ texture = ExtResource("2_kp5ct")
 5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:8/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kp5ct"]
+texture = ExtResource("2_1irxo")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.8483677, -8, 8, 8, 8, 8, -6.7910595)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_seg7s"]
+texture = ExtResource("4_1irxo")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, 8, 8, 8, -8, 8, -8, -8, 8, -8)
+
 [resource]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 6
 sources/0 = SubResource("TileSetAtlasSource_xokc6")
 sources/2 = SubResource("TileSetAtlasSource_k140u")
-sources/1 = SubResource("TileSetAtlasSource_seg7s")
+sources/3 = SubResource("TileSetAtlasSource_kp5ct")
+sources/4 = SubResource("TileSetAtlasSource_seg7s")

@@ -15,6 +15,10 @@ run/main_scene="uid://jtodpuenuhar"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*uid://bkmknejnk6t0o"
+
 [display]
 
 window/size/viewport_width=576
@@ -87,11 +91,12 @@ interact={
 
 [layer_names]
 
-2d_render/layer_1="terrain"
-2d_render/layer_2="player"
-2d_render/layer_3="enemies"
-2d_render/layer_4="level_end"
-2d_render/layer_5="npc"
+2d_physics/layer_1="terrain"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="enemy"
+2d_physics/layer_4="level_end"
+2d_physics/layer_5="npc"
+2d_physics/layer_6="Bullet"
 
 [physics]
 

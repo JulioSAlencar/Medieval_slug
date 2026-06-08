@@ -13,6 +13,7 @@
 [ext_resource type="TileSet" uid="uid://wumxlpv7fq43" path="res://Tiles/Decoration.tres" id="11_7cdsw"]
 [ext_resource type="PackedScene" uid="uid://4esbid5vucy7" path="res://entities/World/camera.tscn" id="12_66p6d"]
 [ext_resource type="PackedScene" uid="uid://b3nrpwr366e18" path="res://entities/World/level_end.tscn" id="13_hg2jp"]
+[ext_resource type="PackedScene" uid="uid://bpatl4jpfpiou" path="res://entities/Enemies/enemie_1.tscn" id="14_ji73l"]
 
 [node name="Forest" type="Node2D" unique_id=868546146]
 metadata/_edit_vertical_guides_ = [1151.0, 1152.0, 1152.0]
@@ -114,3 +115,7 @@ next_level = "plain"
 [node name="Player" parent="." unique_id=1023012332 instance=ExtResource("1_ly3ei")]
 position = Vector2(45, 256)
 scale = Vector2(2, 2)
+
+[node name="Enemie1" parent="." unique_id=1833044908 instance=ExtResource("14_ji73l")]
+position = Vector2(335, 240)
+scale = Vector2(-1, 1)

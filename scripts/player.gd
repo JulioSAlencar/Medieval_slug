@@ -76,3 +76,12 @@ func _update_animations() -> void:
 		legs.play("walk_back")
 	else:
 		legs.play("walk")
+
+func _hited():
+	$LifeBar.value -= 20
+	if $LifeBar.value <= 0:
+		Globals.restart_game()
+		
+		
+		
+		
